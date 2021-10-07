@@ -1,33 +1,93 @@
 body {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
   width: 100%;
 }
-
+.wc-top-left {
+  position: absolute;
+  z-index:100;
+  width: 68%;
+}
 .wc-page {
   position: relative;
-  z-index: 1;
+  width: 100%;
+  height: 100%;
 }
-.wc-side-image-container {
+
+.wc-top-left:hover {
+  width: 70%;
+  transition-duration: 1s;
+}
+
+.wc-left-image {
   position: absolute;
-  width: 40%;
+  width: 24.5%;
+  z-index: 0;
+  top: 2%;
+  left: 0;
 }
-.wc-left-side {
-  position: absolute;
-  width: 50%;
-  z-index: -1;
-}
+
+.wc-left-image:hover {
+  width: 26% ;
+  transition-duration: 1s;
+  }
 
 .wc-middle-left {
   position: absolute;
-  width: 40%;
-  left: 25%;
+  top: 0;
+  width: 22.8%;
+  left: 24%;
+  z-index: 50;
 }
 
-.right-half-image {
-  right: 0px;
-  width: 40%;
+.wc-right-half-image {
+  position: absolute;
+  width: 33.47%;
+  left: 46.5%
+}
+
+.wc-bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 90;
+  width: 33%;
+}
+
+.wc-bottom-left:hover {
+  width: 35%;
+  transition-duration: 1s;
+}
+
+.wc-right-building {
+  position: absolute;
+  right: 4%;
+  top: 0;
+  width: 16%;
+  z-index: 80;
+}
+
+.wc-bottom-right {
+  position: absolute;
+  width: 25%;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+
+}
+
+.wc-far-right {
+  position: absolute;
+  right: 0;
+  width: 13%;
+}
+
+.wc-trees-back {
+  position: absolute;
+  width: 20%;
+  right: 28%;
+  z-index: 1;
 }
