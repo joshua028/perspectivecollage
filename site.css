@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 
 img {
@@ -11,92 +12,94 @@ img {
   position: relative;
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 
-.wc-top-left {
+.wc-top-left-ice {
   position: absolute;
   z-index:100;
   width: 68%;
 }
-.wc-top-left:hover {
+.wc-top-left-ice:hover {
   width: 70%;
   transition-duration: 1s;
 }
 
-.wc-left-image {
+.wc-left-building-rainbow {
   position: absolute;
   width: 24.5%;
   z-index: 0;
   top: 2%;
   left: 0;
 }
-.wc-left-image:hover {
+.wc-left-building-rainbow:hover {
   width: 26% ;
   transition-duration: 1s;
   }
 
-.wc-middle-left {
+.wc-deck-building {
   position: absolute;
   top: 0;
   width: 22.8%;
   left: 24%;
   z-index: 50;
 }
-.wc-middle-left:hover {
+.wc-deck-building:hover {
   width: 23.5%;
   transition-duration: 1s;
 }
 
-.wc-right-half-image {
+.wc-vertical-building {
   position: absolute;
   width: 41%;
   left: 45%;
   z-index: 7;
 }
-.wc-right-half-image:hover {
+.wc-vertical-building:hover {
   width: 43%;
   transition-duration: 1s;
 }
 
-.wc-bottom-left {
+.wc-garden-building {
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 90;
   width: 33%;
+  cursor: pointer;
 }
-.wc-bottom-left:hover {
+.wc-garden-building:hover {
   width: 35%;
   transition-duration: 1s;
 }
 
-.wc-right-building {
+.wc-right-building-cropped {
   position: absolute;
   right: 1%;
   top: 0;
   width: 14%;
   z-index: 80;
 }
-.wc-right-building:hover {
+.wc-right-building-cropped:hover {
   width: 15%;
   transition-duration: 1s;
 }
 
-.wc-bottom-right {
+.wc-bottom-right-skulls {
   position: absolute;
   width: 25%;
   bottom: 0;
   right: 0;
   z-index: 99;
 }
-.wc-bottom-right {
+.wc-bottom-right-skulls:hover {
   width: 27%;
   transition-duration: 1s;
 }
 
 .wc-trees-back {
   position: absolute;
-  width: 24%;
+  width: 23%;
   right: 27%;
   z-index: 4;
 }
@@ -105,33 +108,128 @@ img {
   transition-duration: 1s;
 }
 
-.wc-background-building {
+.wc-curved-building {
   position: absolute;
   right: 17%;
   top: 5%;
   width: 20%;
   z-index: 5;
 }
-.wc-background-building:hover {
+.wc-curved-building:hover {
   width: 22%;
   transition-duration: 1s;
 }
-.wc-batgrid {
-  position: absolute;
-  z-index: 60;
-  left: 30%;
-  top: 58%;
-  width: 16%;
-}
-.wc-containers-right {
+.wc-containers-background {
   position: absolute;
   top: 0;
   right: 0;
-  width: 20%;
+  width: 14.4%;
   z-index: 3;
 }
 
-.wc-containers-right:hover {
-  width: 22%;
+.wc-containers-background:hover {
+  width: 16%;
   transition-duration: 1s;
+}
+.wc-box-for-curved-building {
+  position:absolute;
+  width: 8%;
+  height: 78%;
+  z-index: 99;
+  right:28%;
+  top: 6%;
+}
+.wc-box-for-trees-back {
+  position:absolute;
+  width: 12%;
+  height: 85%;
+  z-index: 98;
+  right:28%;
+  top: 0;
+}
+.wc-bottom-left-whole {
+  background-image: url(./images/bottom-left-whole.jpeg);
+  width: 150vh;
+  height: 100%;
+  margin:auto;
+  background-size: 50%;
+  background-position: center;
+}
+/* .vertical-building-whole {
+  background-image: url(./images/vertical-building-whole.jpeg);
+  width: 150vh;
+  height: 100%;
+  margin:auto;
+  background-size: cover;
+  background-position: center;
+} */
+
+.wc-showing--bottom-left-building .wc-bottom-left-whole {
+  display: block;
+  z-index: 100;
+  position: relative;
+}
+.wc-showing--vertical-building .vertical-building-whole {
+  display: block;
+  z-index: 120;
+  position: relative;
+}
+
+@media only screen and (max-width: 1000px) {
+.wc-vertical-building {
+  width 60%;
+
+}
+
+}
+@media only screen and (max-width: 600px) {
+.wc-vertical-building {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+}
+.wc-left-building-rainbow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+}
+.wc-background-building {
+  position: absolute;
+  top: 60% ;
+  left: 30%;
+  width: 30%;
+}
+.wc-containers-background {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  width: 40%;
+}
+.wc-garden-building {
+  width: 50%;
+}
+.wc-bottom-right-skulls {
+  width: 35%;
+}
+.wc-trees-back {
+  bottom: 10.5%;
+  left: 15%;
+  width: 30%;
+}
+.wc-right-building-cropped {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  width: 29%;
+}
+.wc-deck-building {
+  left: 59%;
+  width: 41%;
+}
+.wc-top-left-ice {
+  left: 0;
+  width: 100%;
+}
 }

@@ -11,39 +11,162 @@
 </head>
 <body>
   <div class="wc-page">
-    <div class="wc-top-left">
+    <div class="wc-top-left-ice" id="top-left-ice">
       <img src="./images/top-left.png">
     </div>
-    <div class="wc-left-image">
+    <div class="wc-left-building-rainbow" id="left-building-rainbow">
       <img src="./images/left-image.jpeg">
     </div>
-    <div class="wc-middle-left">
+    <div class="wc-deck-building" id="deck-building">
       <img src="./images/middle-left.jpg">
     </div>
-    <div class="wc-bottom-left">
+    <div class="wc-garden-building" id="bottom-left-building">
       <img src="./images/bottom-left.png">
     </div>
-    <div class="wc-right-half-image">
+    <div class="wc-vertical-building" id="vertical-building">
       <img src="./images/right-half-image.png">
     </div>
-    <div class="wc-containers-right">
+    <div class="wc-containers-background" id="containers-background">
       <img src="./images/containers-right.png">
     </div>
-    <div class="wc-bottom-right">
+    <div class="wc-bottom-right-skulls" id="bottom-right-skulls">
       <img src="./images/bottom-right.png">
     </div>
-    <div class="wc-background-building">
+    <div class="wc-curved-building">
       <img src="./images/building-background.png">
     </div>
     <div class="wc-trees-back">
       <img src="./images/trees.jpg">
     </div>
-    <div class="wc-right-building">
+    <div class="wc-right-building-cropped" id="right-building-cropped">
       <img src="./images/right-crop.png">
     </div>
-    <div class="wc-containers-right">
-      <img src"./images/containers-right.png">
+    <div class="wc-box-for-curved-building" id="curved-building">
+    </div>
+    <div class="wc-box-for-trees-back" id="trees-background">
+    </div>
+    <div class="wc-full-images-container">
+      <div class="wc-bottom-left-whole" id="bottom-left-building-big">
+      </div>
+      <div class="vertical-building-whole" id="vertical-building-big">
+      </div>
+      <div class="top-left-ice-whole" id="top-left-ice-big">
+      </div>
+      <div class="left-building-rainbow-whole" id="left-building-rainbow-big">
+      </div>
+      <div class="deck-building-whole" id="deck-building-big">
+      </div>
+      <div class="containers-background-whole" id="containers-background-big">
+      </div>
+      <div class="bottom-right-skulls-whole" id="bottom-right-skulls-big">
+      </div>
+      <div class="curved-building-whole" id="curved-building-big">
+      </div>
+      <div class="trees-back-whole" id="trees-back-big">
+      </div>
+      <div class="right-building-cropped-whole" id="right-building-cropped-big">
+      </div>
     </div>
   </div>
+  <script>
+  (function() {
+    document.getElementById("bottom-left-building").onclick = function () {
+      document.body.classList.add("wc-showing--bottom-left-building");
+    }
+    document.getElementById("bottom-left-building-big").onclick = function () {
+      document.body.classList.remove("wc-showing--bottom-left-building");
+    }
+  })();
+  </script>
+  <script>
+  (function() {
+    document.getElementById("vertical-building").onclick = function () {
+      document.body.classList.add("wc-showing--vertical-building");
+    }
+    document.getElementById("vertical-building-big").onclick = function () {
+      document.body.classList.remove("wc-showing--vertical-building");
+    }
+  })();
+  </script>
+  <script>
+  (function() {
+    document.getElementById("top-left-ice").onclick = function () {
+      document.body.classList.add("wc-showing--bottom-left-building");
+    }
+    document.getElementById("top-left-ice-big").onclick = function () {
+      document.body.classList.remove("wc-showing--vertical-building");
+    }
+  })();
+  </script>
+  <script>
+  (function() {
+    document.getElementById("left-building-rainbow").onclick = function () {
+      document.body.classList.add("wc-showing--bottom-left-building");
+    }
+    document.getElementById("left-building-rainbow-big").onclick = function () {
+      document.body.classList.remove("wc-showing--vertical-building");
+    }
+  })();
+  </script>
+  <script>
+  (function() {
+    document.getElementById("deck-building").onclick = function () {
+      document.body.classList.add("wc-showing--bottom-left-building");
+    }
+    document.getElementById("deck-building-big").onclick = function () {
+      document.body.classList.remove("wc-showing--vertical-building");
+    }
+  })();
+  </script>
+  <script>
+  (function() {
+    document.getElementById("containers-background").onclick = function () {
+      document.body.classList.add("wc-showing--bottom-left-building");
+    }
+    document.getElementById("containers-background-big").onclick = function () {
+      document.body.classList.remove("wc-showing--vertical-building");
+    }
+  })();
+  </script>
+  <script>
+  (function() {
+    document.getElementById("bottom-right-skulls").onclick = function () {
+      document.body.classList.add("wc-showing--bottom-left-building");
+    }
+    document.getElementById("bottom-right-skulls-big").onclick = function () {
+      document.body.classList.remove("wc-showing--vertical-building");
+    }
+  })();
+  </script>
+  <script>
+  (function() {
+    document.getElementById("right-building-cropped").onclick = function () {
+      document.body.classList.add("wc-showing--bottom-left-building");
+    }
+    document.getElementById("right-building-cropped-big").onclick = function () {
+      document.body.classList.remove("wc-showing--vertical-building");
+    }
+  })();
+  </script>
+  <script>
+  (function() {
+    document.getElementById("curved-building").onclick = function () {
+      document.body.classList.add("wc-showing--bottom-left-building");
+    }
+    document.getElementById("curved-building-big").onclick = function () {
+      document.body.classList.remove("wc-showing--bottom-left-building");
+    }
+  })();
+  </script>
+  <script>
+  (function() {
+    document.getElementById("trees-background").onclick = function () {
+      document.body.classList.add("wc-showing--bottom-left-building");
+    }
+    document.getElementById("trees-back-big").onclick = function () {
+      document.body.classList.remove("wc-showing--bottom-left-building");
+    }
+  })();
+  </script>
 </body>
 </html>
